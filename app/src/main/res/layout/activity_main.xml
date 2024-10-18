@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:layout_margin="10dp"
+        android:background="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="402dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintVertical_bias="0.039">
+
+        <!-- Botones de la calculadora -->
+        <Button
+            android:id="@+id/button9"
+            style="@style/botonrecto"
+            android:text="9"
+            android:onClick="v9"/>
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/botonrecto"
+            android:text="8"
+            android:onClick="v8"/>
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/botonrecto"
+            android:text="7"
+            android:onClick="v7"/>
+
+        <Button
+            android:id="@+id/buttonMas"
+            style="@style/botonrecto"
+            android:text="+"
+            android:onClick="operator"/>
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/botonrecto"
+            android:text="6"
+            android:onClick="v6"/>
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/botonrecto"
+            android:text="5"
+            android:onClick="v5"/>
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/botonrecto"
+            android:text="4"
+            android:onClick="v4"/>
+
+        <Button
+            android:id="@+id/buttonC"
+            style="@style/botonrecto"
+            android:text="C"
+            android:onClick="limpiar"/>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/botonrecto"
+            android:text="3"
+            android:onClick="v3"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/botonrecto"
+            android:text="2"
+            android:onClick="v2"/>
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/botonrecto"
+            android:text="1"
+            android:onClick="v1"/>
+
+        <Button
+            android:id="@+id/buttonIgual"
+            style="@style/botonrecto"
+            android:text="="
+            android:onClick="igual"/>
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/botonrecto"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0"
+            android:onClick="v0"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
