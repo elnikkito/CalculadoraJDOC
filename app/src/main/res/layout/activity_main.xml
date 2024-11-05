@@ -37,6 +37,7 @@
         app:layout_constraintVertical_bias="0.039">
 
         <!-- Botones de la calculadora -->
+
         <Button
             android:id="@+id/button9"
             style="@style/botonrecto"
@@ -116,6 +117,19 @@
             android:layout_gravity="fill"
             android:text="0"
             android:onClick="v0"/>
+
+        <Button
+            android:id="@+id/buttonmultiplicar"
+            style="@style/botonrecto"
+            android:text="*"
+            android:onClick="operator"/>
+
+        <Button
+            android:id="@+id/buttondividir"
+            style="@style/botonrecto"
+            android:text="/"
+            android:onClick="operator"/>
     </GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
